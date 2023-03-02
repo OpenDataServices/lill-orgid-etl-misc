@@ -15,6 +15,7 @@ spec:
         kubernetes.io/os: linux
       containers:
         - image: lillorgidcontainerregistry.azurecr.io/lillorgidwebapp:live
+          imagePullPolicy: Always
           name: lill-orgid-web-app
           resources:
             requests:

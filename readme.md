@@ -33,3 +33,7 @@ Apply:
     kubectl apply -f ./kubernetes/clusterip.yaml
     kubectl apply -f ./kubernetes/ingress.yaml
 
+To deploy latest version of app:
+
+    kubectl rollout restart deployment lill-orgid-web-app
+
