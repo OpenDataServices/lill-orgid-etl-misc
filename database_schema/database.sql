@@ -31,6 +31,14 @@ CREATE TABLE list (
 	PRIMARY KEY("id")
 );
 
+CREATE TABLE data_standard (
+	"id"	VARCHAR(100) NOT NULL,
+	PRIMARY KEY("id")
+);
+
+INSERT INTO data_standard(id) VALUES ('iati');
+INSERT INTO data_standard(id) VALUES ('ocds');
+
 CREATE TABLE data (
     list VARCHAR(100) NOT NULL,
     id VARCHAR(200) NOT NULL,
@@ -40,6 +48,7 @@ CREATE TABLE data (
     url TEXT NULL,
     meta JSON,
 	PRIMARY KEY("list", "id", "data_standard", "source_id"),
-    FOREIGN KEY(list) REFERENCES list(id)
+    FOREIGN KEY(list) REFERENCES list(id),
+    FOREIGN KEY(data_standard) REFERENCES data_standard(id)
 );
 
