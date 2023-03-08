@@ -38,6 +38,7 @@ CREATE TABLE data_standard (
 
 INSERT INTO data_standard(id) VALUES ('iati');
 INSERT INTO data_standard(id) VALUES ('ocds');
+INSERT INTO data_standard(id) VALUES ('indigo');
 
 CREATE TABLE data (
     list VARCHAR(100) NOT NULL,
