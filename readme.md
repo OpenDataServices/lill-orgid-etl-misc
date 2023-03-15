@@ -19,21 +19,3 @@ Set ENV:
 
     export AZURE_POSTGRES_CONNECTION_STRING=postgresql://postgres:1234@localhost/postgres
 
-
-
-## Kubernetes Setup
-
-Set Secret:
-
-    kubectl create secret generic lillorg-postgres-database --from-literal=AZURE_POSTGRES_CONNECTION_STRING='xxxxxxxxxx'
-
-Apply:
-
-    kubectl apply -f ./kubernetes/deployment.yaml
-    kubectl apply -f ./kubernetes/clusterip.yaml
-    kubectl apply -f ./kubernetes/ingress.yaml
-
-To deploy latest version of app:
-
-    kubectl rollout restart deployment lill-orgid-web-app
-
