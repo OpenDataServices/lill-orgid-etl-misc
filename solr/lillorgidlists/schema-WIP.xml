@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema name="lillorgidlists" version="1.6">
+
+
+    <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
+
+    <field name="title_en" type="text" indexed="false" stored="true"/>
+    <field name="title_local" type="text" indexed="false" stored="true"/>
+    <field name="url" type="string" indexed="false" stored="true"/>
+    <field name="description_en" type="text" indexed="false" stored="true"/>
+    <field name="coverage" type="text" indexed="false" stored="true"/>
+    <field name="subnationalCoverage" type="string" indexed="false" stored="true"/>
+    <field name="structure" type="string" indexed="false" stored="true"/>
+    <field name="sector" type="string" indexed="false" stored="true"/>
+    <field name="confirmed" type="string" indexed="false" stored="true"/>
+    <field name="deprecated" type="string" indexed="false" stored="true"/>
+    <field name="listType" type="string" indexed="false" stored="true"/>
+    <field name="access_availableOnline" type="string" indexed="false" stored="true"/>
+    <field name="access_onlineAccessDetails" type="string" indexed="false" stored="true"/>
+    <field name="access_publicDatabase" type="string" indexed="false" stored="true"/>
+    <field name="access_guidanceOnLocatingIds" type="string" indexed="false" stored="true"/>
+    <field name="access_exampleIdentifiers" type="string" indexed="false" stored="true"/>
+    <field name="access_languages" type="string" indexed="false" stored="true"/>
+    <field name="data_availability" type="string" indexed="false" stored="true"/>
+    <field name="data_dataAccessDetails" type="string" indexed="false" stored="true"/>
+    <field name="data_features" type="string" indexed="false" stored="true"/>
+    <field name="data_licenseStatus" type="string" indexed="false" stored="true"/>
+    <field name="data_licenseDetails" type="string" indexed="false" stored="true"/>
+    <field name="meta_source" type="string" indexed="false" stored="true"/>
+    <field name="meta_lastUpdated" type="string" indexed="false" stored="true"/>
+    <field name="links_opencorporates" type="string" indexed="false" stored="true"/>
+    <field name="links_wikipedia" type="string" indexed="false" stored="true"/>
+    <field name="formerPrefixes" type="string" indexed="false" stored="true"/>
+
+    <uniqueKey>id</uniqueKey>
+
+</schema>
